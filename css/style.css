@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap');
+
+:root {
+  --primary: #fff;
+  --secondary: #000000;
+  --grey: #808080;
+  --yellow: #ffff00;
+}
+
+body {
+  background-image: url('../images/minions-background.jpg');
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+main {
+  text-align: center;
+}
+
+h1 {
+  color: var(--secondary);
+  font-weight: bolder;
+}
+
+p {
+  color: var(--grey);
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  word-spacing: 5px;
+}
+
+.input {
+  width: 60%;
+  height: 30vh;
+  border: 3px solid var(--primary);
+  border-radius: 25px;
+  margin: 0.5rem;
+  padding: 1rem;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--yellow);
+}
+
+#input-btn {
+  background-color: var(--yellow);
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: centre;
+  margin: 25px 47%;
+  height: 43px;
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#output {
+  width: 60%;
+  height: 15vh;
+  border: 3px solid var(--primary);
+  border-radius: 25px;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  color: var(--yellow);
+  font-family: monospace;
+  text-align: left;
+  font-size: 20px;
+  background-color: var(--secondary);
+}
+
+footer {
+  background: var(--secondary);
+  padding: 15px 23px;
+  color: var(--primary);
+  text-align: center;
+  width: 100%;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
