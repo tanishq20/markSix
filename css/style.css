@@ -5,6 +5,12 @@
   --secondary: #000000;
   --grey: #808080;
   --yellow: #ffff00;
+  --footer-color: #004068;
+  --wheat-color: wheat;
+  --github-color: black;
+  --linkedin-color: #0976b4;
+  --twitter-color: #55acee;
+  --insta-color: crimson;
 }
 
 body {
@@ -25,6 +31,7 @@ main {
 h1 {
   color: var(--secondary);
   font-weight: bolder;
+  text-align: center;
 }
 
 p {
@@ -77,19 +84,91 @@ p {
   background-color: var(--secondary);
 }
 
+/* footer section styling */
 footer {
-  background: var(--secondary);
+  background: var(--footer-color);
   padding: 15px 23px;
   color: var(--primary);
   text-align: center;
-  width: 100%;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 20px;
 }
-
 footer span a {
-  color: crimson;
+  color: var(--wheat-color);
   text-decoration: none;
 }
-
 footer span a:hover {
   text-decoration: underline;
+}
+.social-buttons {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+.social-buttons .social-margin {
+  margin-right: 15px;
+}
+
+.social-buttons .social-icon {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 138px;
+  border: 5px solid;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  line-height: 1px;
+  padding-top: 11px;
+  transition: all 0.5s;
+}
+
+.social-buttons .social-icon.twitter {
+  font-size: 22px;
+  padding-top: 10px;
+  padding-left: 2px;
+  border-color: var(--twitter-color);
+  background-color: var(--twitter-color);
+  color: var(--primary);
+}
+.social-buttons .social-icon.twitter:hover {
+  background-color: var(--primary);
+  color: var(--twitter-color);
+}
+.social-buttons .social-icon.linkedin {
+  font-size: 24px;
+  padding-top: 8px;
+  padding-left: 1px;
+  background-color: var(--linkedin-color);
+  color: var(--primary);
+  border-color: var(--linkedin-color);
+}
+.social-buttons .social-icon.linkedin:hover {
+  background-color: var(--primary);
+  color: var(--linkedin-color);
+}
+.social-buttons .social-icon.instagram {
+  font-size: 22px;
+  padding-top: 9px;
+  background-color: var(--insta-color);
+  color: var(--primary);
+  border-color: var(--insta-color);
+}
+.social-buttons .social-icon.instagram:hover {
+  background-color: var(--primary);
+  color: var(--insta-color);
+}
+.social-buttons .social-icon.github {
+  font-size: 22px;
+  padding-top: 9px;
+  background-color: var(--github-color);
+  color: var(--primary);
+  border-color: var(--github-color);
+}
+.social-buttons .social-icon.github:hover {
+  background-color: var(--primary);
+  color: var(--github-color);
 }
